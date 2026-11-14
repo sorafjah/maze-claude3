@@ -118,6 +118,12 @@
       margin: 15mm;
     }
   }
+/* スマホ用レイアウト調整2 */
+@media screen and (orientation:landscape) and (max-height:500px), screen and (orientation:portrait) and (max-width:500px) {
+  #mazeCanvas { max-width:calc(100vw - 16px); height:auto !important; }
+  body { overflow-x:hidden; }
+}
+/* /スマホ用レイアウト調整2 */
 </style>
 </head>
 <body>
